@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Brazil_Flag" size="1024.000000 711.952637" />
+    <ImageTarget name="rikeilogo" size="100.000000 51.470589" />
+    <ImageTarget name="balloon" size="512.000000 385.023987" />
+    <ImageTarget name="dsfvdfgsdf" size="512.000000 384.000000" />
+    <ImageTarget name="Hires" size="1024.000000 682.050537" />
+    <ImageTarget name="Fruit" size="512.000000 208.213333" />
+    <ImageTarget name="quytac5s" size="512.000000 690.637390" />
+  </Tracking>
+</QCARConfig>

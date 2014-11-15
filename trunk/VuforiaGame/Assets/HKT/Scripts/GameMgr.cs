@@ -27,6 +27,12 @@ public class GameMgr : MonoBehaviour
 						currentObject.transform.parent = gameObject.transform;
 						currentObject.transform.localScale = new Vector3 (0.5f, 0.5f, 0.5f);
 				}
+
+				if (GUI.Button (new Rect (100, 300, 100, 100), "sound")) {
+						AudioSource audio = currentObject.GetComponent<AudioSource> () as AudioSource;
+						if (audio != null && !audio.isPlaying)
+								audio.Play ();
+				}
 		}
 	
 		// Update is called once per frame

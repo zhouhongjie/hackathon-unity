@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PinchZoom : MonoBehaviour
 {
-		private float scale_factor = 0.005f;   
+		private float scale_factor = 0.02f;   
 		private float MAXSCALE = 2.0f, MIN_SCALE = 0.2f; // zoom-in and zoom-out limits
 		private Vector2 prevDist = new Vector2 (0, 0);
 		private Vector2 curDist = new Vector2 (0, 0);

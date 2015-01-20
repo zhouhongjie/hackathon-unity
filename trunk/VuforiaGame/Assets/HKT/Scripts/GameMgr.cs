@@ -30,6 +30,7 @@ public class GameMgr : MonoBehaviour
 				GameObject firstAnimal = Instantiate (listAnimal [2], new Vector3 (0, 0, 0), Quaternion.identity) as GameObject;
 				firstAnimal.transform.parent = imgTarget.transform;
 				firstAnimal.transform.localScale = new Vector3 (0.5f, 0.5f, 0.5f);
+				AnimalDB.Instance.currentAnimal = firstAnimal;
 				labelInfo.GetComponent<UILabel> ().text = AnimalDB.Instance.info [2];
 		}
 
@@ -56,7 +57,7 @@ public class GameMgr : MonoBehaviour
 
 		public void playSound ()
 		{
-				GameObject currentObject = imgTarget.transform.GetChild (0).gameObject;
+				GameObject currentObject = imgTarget.transform.GetChild (1).gameObject;
 				AudioSource audio = currentObject.GetComponent<AudioSource> () as AudioSource;
 				if (audio != null && !audio.isPlaying)
 						audio.Play ();

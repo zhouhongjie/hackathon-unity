@@ -4,6 +4,9 @@ using System.Collections;
 public class AnimalDB : SingletonMonoBehaviour<AnimalDB>
 {
 		[HideInInspector]
+		public GameObject
+				currentAnimal;
+		[HideInInspector]
 		public string[]
 				name = new string[] {
 			"BEAR",
